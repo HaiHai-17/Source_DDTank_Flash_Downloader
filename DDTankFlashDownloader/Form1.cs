@@ -26,6 +26,11 @@ namespace DDTankFlashDownloader
                 cbDil.SelectedIndex = 1;
                 Dil();
             }
+            else if (Properties.Settings.Default.seciliDil == "Vietnam")
+            {
+                cbDil.SelectedIndex = 2;
+                Dil();
+            }
         }
 
         private void Dil()
@@ -76,6 +81,29 @@ namespace DDTankFlashDownloader
 
                 //ComboBox
                 cbDil.Text = "Language";
+            }
+            if (cbDil.SelectedIndex == 2) //Vietnam
+            {
+                //Labels
+                lblFlashDosyaAdi.Text = "Tên File Flash :";
+                lblFlashDil.Text = "Ngôn ngữ Flash :";
+                lblUrlUi.Text = "flash/ui/ngôn ngữ/";
+                lblUrlSwf.Text = "flash/ui/ngôn ngữ/swf/";
+                lblUrlXml.Text = "flash/ui/ngôn ngữ/xml/";
+
+                //Buttons
+                btnSil.Text = "Xoá";
+                btnEkle.Text = "Thêm File";
+                btnSilDil.Text = "Xoá";
+                btnEkleDil.Text = "Thêm File";
+                btnSilSwf.Text = "Xoá";
+                btnEkleSwf.Text = "Thêm File";
+                btnSilXml.Text = "Xoá";
+                btnEkleXml.Text = "Thêm File";
+                btnIndir.Text = "Bắt đầu !";
+
+                //ComboBox
+                cbDil.Text = "Ngôn ngữ";
             }
         }
 
@@ -219,6 +247,8 @@ namespace DDTankFlashDownloader
                 {
                     if (Properties.Settings.Default.seciliDil == "English")
                         MessageBox.Show("Flash File Name Is Empty!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else if (Properties.Settings.Default.seciliDil == "English")
+                        MessageBox.Show("Tên File Flash trống!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     else
                         MessageBox.Show("Пустая строка Имя файла Flash!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -226,6 +256,8 @@ namespace DDTankFlashDownloader
                 {
                     if (Properties.Settings.Default.seciliDil == "English")
                         MessageBox.Show("Flash URL Is Empty!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else if (Properties.Settings.Default.seciliDil == "Vietnam")
+                        MessageBox.Show("Đường dẫn Flash trống!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     else
                         MessageBox.Show("Пустая строка Flash URL!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -233,6 +265,8 @@ namespace DDTankFlashDownloader
                 {
                     if (Properties.Settings.Default.seciliDil == "English")
                         MessageBox.Show("Flash Language Is Empty!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else if (Properties.Settings.Default.seciliDil == "Vietnam")
+                        MessageBox.Show("Ngôn ngữ Flash trống!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     else
                         MessageBox.Show("Пустая строка lang!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -249,6 +283,8 @@ namespace DDTankFlashDownloader
             {
                 if (Properties.Settings.Default.seciliDil == "English")
                     MessageBox.Show("Something went wrong. Please check your download information!  ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else if(Properties.Settings.Default.seciliDil == "Vietnam")
+                    MessageBox.Show("Đã xảy ra lỗi. Vui lòng kiểm tra thông tin tải xuống của bạn!  ", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 else
                     MessageBox.Show("Что-то пошло не так. Пожалуйста, проверьте вашу информацию о загрузке!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -402,21 +438,17 @@ namespace DDTankFlashDownloader
                 Properties.Settings.Default.seciliDil = "English";
                 Properties.Settings.Default.Save();
             }
+            else if (cbDil.SelectedIndex == 2)
+            {
+                Properties.Settings.Default.seciliDil = "Vietnam";
+                Properties.Settings.Default.Save();
+            }
         }
 
         private void linkvk_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://vk.com/gszone");
+            Process.Start("https://github.com/HaiHai-17");
         }
 
-        private void linkgszone_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Process.Start("http://forum.gszone.ru/");
-        }
-
-        private void lblFlashDil_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

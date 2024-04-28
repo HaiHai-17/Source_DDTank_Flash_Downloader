@@ -67,39 +67,43 @@
             // lblFlashUrl
             // 
             this.lblFlashUrl.AutoSize = true;
-            this.lblFlashUrl.Location = new System.Drawing.Point(39, 41);
+            this.lblFlashUrl.Location = new System.Drawing.Point(17, 50);
+            this.lblFlashUrl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFlashUrl.Name = "lblFlashUrl";
-            this.lblFlashUrl.Size = new System.Drawing.Size(63, 13);
+            this.lblFlashUrl.Size = new System.Drawing.Size(76, 16);
             this.lblFlashUrl.TabIndex = 0;
             this.lblFlashUrl.Text = "Flash URL :";
             // 
             // txtFlashUrl
             // 
-            this.txtFlashUrl.Location = new System.Drawing.Point(108, 38);
+            this.txtFlashUrl.Location = new System.Drawing.Point(144, 47);
+            this.txtFlashUrl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtFlashUrl.Name = "txtFlashUrl";
-            this.txtFlashUrl.Size = new System.Drawing.Size(356, 20);
+            this.txtFlashUrl.Size = new System.Drawing.Size(473, 22);
             this.txtFlashUrl.TabIndex = 1;
             // 
             // lblFlashDil
             // 
             this.lblFlashDil.AutoSize = true;
-            this.lblFlashDil.Location = new System.Drawing.Point(49, 67);
+            this.lblFlashDil.Location = new System.Drawing.Point(17, 82);
+            this.lblFlashDil.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFlashDil.Name = "lblFlashDil";
-            this.lblFlashDil.Size = new System.Drawing.Size(65, 13);
+            this.lblFlashDil.Size = new System.Drawing.Size(79, 16);
             this.lblFlashDil.TabIndex = 2;
             this.lblFlashDil.Text = "Flash Lang :";
-            this.lblFlashDil.Click += new System.EventHandler(this.lblFlashDil_Click);
             // 
             // txtFlashDil
             // 
-            this.txtFlashDil.Location = new System.Drawing.Point(108, 64);
+            this.txtFlashDil.Location = new System.Drawing.Point(144, 79);
+            this.txtFlashDil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtFlashDil.Name = "txtFlashDil";
-            this.txtFlashDil.Size = new System.Drawing.Size(100, 20);
+            this.txtFlashDil.Size = new System.Drawing.Size(132, 22);
             this.txtFlashDil.TabIndex = 3;
             // 
             // listFlash
             // 
             this.listFlash.FormattingEnabled = true;
+            this.listFlash.ItemHeight = 16;
             this.listFlash.Items.AddRange(new object[] {
             "1.png",
             "2.png",
@@ -114,16 +118,18 @@
             "particallite.xml",
             "shape.swf",
             "shapelite.swf"});
-            this.listFlash.Location = new System.Drawing.Point(8, 122);
+            this.listFlash.Location = new System.Drawing.Point(11, 150);
+            this.listFlash.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listFlash.Name = "listFlash";
-            this.listFlash.Size = new System.Drawing.Size(225, 95);
+            this.listFlash.Size = new System.Drawing.Size(299, 116);
             this.listFlash.TabIndex = 5;
             // 
             // btnSil
             // 
-            this.btnSil.Location = new System.Drawing.Point(8, 223);
+            this.btnSil.Location = new System.Drawing.Point(11, 274);
+            this.btnSil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(75, 23);
+            this.btnSil.Size = new System.Drawing.Size(100, 28);
             this.btnSil.TabIndex = 6;
             this.btnSil.Text = "Удалить";
             this.btnSil.UseVisualStyleBackColor = true;
@@ -131,9 +137,10 @@
             // 
             // btnEkle
             // 
-            this.btnEkle.Location = new System.Drawing.Point(83, 223);
+            this.btnEkle.Location = new System.Drawing.Point(111, 274);
+            this.btnEkle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEkle.Name = "btnEkle";
-            this.btnEkle.Size = new System.Drawing.Size(150, 23);
+            this.btnEkle.Size = new System.Drawing.Size(200, 28);
             this.btnEkle.TabIndex = 7;
             this.btnEkle.Text = "Добавить файл";
             this.btnEkle.UseVisualStyleBackColor = true;
@@ -141,32 +148,36 @@
             // 
             // txtEkle
             // 
-            this.txtEkle.Location = new System.Drawing.Point(83, 252);
+            this.txtEkle.Location = new System.Drawing.Point(111, 310);
+            this.txtEkle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEkle.Name = "txtEkle";
-            this.txtEkle.Size = new System.Drawing.Size(150, 20);
+            this.txtEkle.Size = new System.Drawing.Size(199, 22);
             this.txtEkle.TabIndex = 8;
             // 
             // txtFlashDosyaAdi
             // 
-            this.txtFlashDosyaAdi.Location = new System.Drawing.Point(108, 12);
+            this.txtFlashDosyaAdi.Location = new System.Drawing.Point(144, 15);
+            this.txtFlashDosyaAdi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtFlashDosyaAdi.Name = "txtFlashDosyaAdi";
-            this.txtFlashDosyaAdi.Size = new System.Drawing.Size(100, 20);
+            this.txtFlashDosyaAdi.Size = new System.Drawing.Size(132, 22);
             this.txtFlashDosyaAdi.TabIndex = 9;
             // 
             // lblFlashDosyaAdi
             // 
             this.lblFlashDosyaAdi.AutoSize = true;
-            this.lblFlashDosyaAdi.Location = new System.Drawing.Point(13, 15);
+            this.lblFlashDosyaAdi.Location = new System.Drawing.Point(17, 18);
+            this.lblFlashDosyaAdi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFlashDosyaAdi.Name = "lblFlashDosyaAdi";
-            this.lblFlashDosyaAdi.Size = new System.Drawing.Size(98, 13);
+            this.lblFlashDosyaAdi.Size = new System.Drawing.Size(121, 16);
             this.lblFlashDosyaAdi.TabIndex = 10;
             this.lblFlashDosyaAdi.Text = "Имя файла Flash :";
             // 
             // btnIndir
             // 
-            this.btnIndir.Location = new System.Drawing.Point(8, 286);
+            this.btnIndir.Location = new System.Drawing.Point(11, 352);
+            this.btnIndir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnIndir.Name = "btnIndir";
-            this.btnIndir.Size = new System.Drawing.Size(125, 35);
+            this.btnIndir.Size = new System.Drawing.Size(167, 43);
             this.btnIndir.TabIndex = 11;
             this.btnIndir.Text = "Начать загрузку !";
             this.btnIndir.UseVisualStyleBackColor = true;
@@ -175,6 +186,7 @@
             // listDil
             // 
             this.listDil.FormattingEnabled = true;
+            this.listDil.ItemHeight = 16;
             this.listDil.Items.AddRange(new object[] {
             "language.png",
             "language.txt",
@@ -182,32 +194,36 @@
             "movingnotification.txt",
             "playerregressnotification.txt",
             "zhancode.txt"});
-            this.listDil.Location = new System.Drawing.Point(239, 122);
+            this.listDil.Location = new System.Drawing.Point(319, 150);
+            this.listDil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listDil.Name = "listDil";
-            this.listDil.Size = new System.Drawing.Size(225, 95);
+            this.listDil.Size = new System.Drawing.Size(299, 116);
             this.listDil.TabIndex = 14;
             // 
             // lblUrlFlash
             // 
             this.lblUrlFlash.AutoSize = true;
-            this.lblUrlFlash.Location = new System.Drawing.Point(5, 106);
+            this.lblUrlFlash.Location = new System.Drawing.Point(7, 130);
+            this.lblUrlFlash.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUrlFlash.Name = "lblUrlFlash";
-            this.lblUrlFlash.Size = new System.Drawing.Size(34, 13);
+            this.lblUrlFlash.Size = new System.Drawing.Size(39, 16);
             this.lblUrlFlash.TabIndex = 15;
             this.lblUrlFlash.Text = "flash/";
             // 
             // lblUrlUi
             // 
             this.lblUrlUi.AutoSize = true;
-            this.lblUrlUi.Location = new System.Drawing.Point(236, 106);
+            this.lblUrlUi.Location = new System.Drawing.Point(315, 130);
+            this.lblUrlUi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUrlUi.Name = "lblUrlUi";
-            this.lblUrlUi.Size = new System.Drawing.Size(69, 13);
+            this.lblUrlUi.Size = new System.Drawing.Size(77, 16);
             this.lblUrlUi.TabIndex = 16;
             this.lblUrlUi.Text = "flash/ui/DİL/";
             // 
             // listSwf
             // 
             this.listSwf.FormattingEnabled = true;
+            this.listSwf.ItemHeight = 16;
             this.listSwf.Items.AddRange(new object[] {
             "academy.swf",
             "academycommon.swf",
@@ -425,44 +441,50 @@
             "worshipTheMoon.swf",
             "yyvip.swf",
             "zodiac.swf"});
-            this.listSwf.Location = new System.Drawing.Point(470, 122);
+            this.listSwf.Location = new System.Drawing.Point(627, 150);
+            this.listSwf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listSwf.Name = "listSwf";
-            this.listSwf.Size = new System.Drawing.Size(225, 95);
+            this.listSwf.Size = new System.Drawing.Size(299, 116);
             this.listSwf.TabIndex = 17;
             // 
             // lblUrlSwf
             // 
             this.lblUrlSwf.AutoSize = true;
-            this.lblUrlSwf.Location = new System.Drawing.Point(467, 106);
+            this.lblUrlSwf.Location = new System.Drawing.Point(623, 130);
+            this.lblUrlSwf.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUrlSwf.Name = "lblUrlSwf";
-            this.lblUrlSwf.Size = new System.Drawing.Size(90, 13);
+            this.lblUrlSwf.Size = new System.Drawing.Size(100, 16);
             this.lblUrlSwf.TabIndex = 18;
             this.lblUrlSwf.Text = "flash/ui/DİL/swf/";
             // 
             // listXml
             // 
             this.listXml.FormattingEnabled = true;
+            this.listXml.ItemHeight = 16;
             this.listXml.Items.AddRange(new object[] {
             "xml.png"});
-            this.listXml.Location = new System.Drawing.Point(701, 122);
+            this.listXml.Location = new System.Drawing.Point(935, 150);
+            this.listXml.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listXml.Name = "listXml";
-            this.listXml.Size = new System.Drawing.Size(225, 95);
+            this.listXml.Size = new System.Drawing.Size(299, 116);
             this.listXml.TabIndex = 19;
             // 
             // lblUrlXml
             // 
             this.lblUrlXml.AutoSize = true;
-            this.lblUrlXml.Location = new System.Drawing.Point(698, 106);
+            this.lblUrlXml.Location = new System.Drawing.Point(931, 130);
+            this.lblUrlXml.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUrlXml.Name = "lblUrlXml";
-            this.lblUrlXml.Size = new System.Drawing.Size(89, 13);
+            this.lblUrlXml.Size = new System.Drawing.Size(101, 16);
             this.lblUrlXml.TabIndex = 20;
             this.lblUrlXml.Text = "flash/ui/DİL/xml/";
             // 
             // btnSilDil
             // 
-            this.btnSilDil.Location = new System.Drawing.Point(239, 223);
+            this.btnSilDil.Location = new System.Drawing.Point(319, 274);
+            this.btnSilDil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSilDil.Name = "btnSilDil";
-            this.btnSilDil.Size = new System.Drawing.Size(75, 23);
+            this.btnSilDil.Size = new System.Drawing.Size(100, 28);
             this.btnSilDil.TabIndex = 6;
             this.btnSilDil.Text = "Удалить";
             this.btnSilDil.UseVisualStyleBackColor = true;
@@ -470,16 +492,18 @@
             // 
             // txtEkleDil
             // 
-            this.txtEkleDil.Location = new System.Drawing.Point(314, 252);
+            this.txtEkleDil.Location = new System.Drawing.Point(419, 310);
+            this.txtEkleDil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEkleDil.Name = "txtEkleDil";
-            this.txtEkleDil.Size = new System.Drawing.Size(150, 20);
+            this.txtEkleDil.Size = new System.Drawing.Size(199, 22);
             this.txtEkleDil.TabIndex = 8;
             // 
             // btnSilSwf
             // 
-            this.btnSilSwf.Location = new System.Drawing.Point(470, 223);
+            this.btnSilSwf.Location = new System.Drawing.Point(627, 274);
+            this.btnSilSwf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSilSwf.Name = "btnSilSwf";
-            this.btnSilSwf.Size = new System.Drawing.Size(75, 23);
+            this.btnSilSwf.Size = new System.Drawing.Size(100, 28);
             this.btnSilSwf.TabIndex = 21;
             this.btnSilSwf.Text = "Удалить";
             this.btnSilSwf.UseVisualStyleBackColor = true;
@@ -487,9 +511,10 @@
             // 
             // btnEkleSwf
             // 
-            this.btnEkleSwf.Location = new System.Drawing.Point(545, 223);
+            this.btnEkleSwf.Location = new System.Drawing.Point(727, 274);
+            this.btnEkleSwf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEkleSwf.Name = "btnEkleSwf";
-            this.btnEkleSwf.Size = new System.Drawing.Size(150, 23);
+            this.btnEkleSwf.Size = new System.Drawing.Size(200, 28);
             this.btnEkleSwf.TabIndex = 22;
             this.btnEkleSwf.Text = "Добавить файл";
             this.btnEkleSwf.UseVisualStyleBackColor = true;
@@ -497,16 +522,18 @@
             // 
             // txtEkleSwf
             // 
-            this.txtEkleSwf.Location = new System.Drawing.Point(545, 252);
+            this.txtEkleSwf.Location = new System.Drawing.Point(727, 310);
+            this.txtEkleSwf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEkleSwf.Name = "txtEkleSwf";
-            this.txtEkleSwf.Size = new System.Drawing.Size(150, 20);
+            this.txtEkleSwf.Size = new System.Drawing.Size(199, 22);
             this.txtEkleSwf.TabIndex = 23;
             // 
             // btnSilXml
             // 
-            this.btnSilXml.Location = new System.Drawing.Point(701, 223);
+            this.btnSilXml.Location = new System.Drawing.Point(935, 274);
+            this.btnSilXml.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSilXml.Name = "btnSilXml";
-            this.btnSilXml.Size = new System.Drawing.Size(75, 23);
+            this.btnSilXml.Size = new System.Drawing.Size(100, 28);
             this.btnSilXml.TabIndex = 21;
             this.btnSilXml.Text = "Удалить";
             this.btnSilXml.UseVisualStyleBackColor = true;
@@ -514,9 +541,10 @@
             // 
             // btnEkleXml
             // 
-            this.btnEkleXml.Location = new System.Drawing.Point(776, 223);
+            this.btnEkleXml.Location = new System.Drawing.Point(1035, 274);
+            this.btnEkleXml.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEkleXml.Name = "btnEkleXml";
-            this.btnEkleXml.Size = new System.Drawing.Size(150, 23);
+            this.btnEkleXml.Size = new System.Drawing.Size(200, 28);
             this.btnEkleXml.TabIndex = 22;
             this.btnEkleXml.Text = "Добавить файл";
             this.btnEkleXml.UseVisualStyleBackColor = true;
@@ -524,16 +552,18 @@
             // 
             // txtEkleXml
             // 
-            this.txtEkleXml.Location = new System.Drawing.Point(776, 252);
+            this.txtEkleXml.Location = new System.Drawing.Point(1035, 310);
+            this.txtEkleXml.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEkleXml.Name = "txtEkleXml";
-            this.txtEkleXml.Size = new System.Drawing.Size(150, 20);
+            this.txtEkleXml.Size = new System.Drawing.Size(199, 22);
             this.txtEkleXml.TabIndex = 23;
             // 
             // btnEkleDil
             // 
-            this.btnEkleDil.Location = new System.Drawing.Point(314, 223);
+            this.btnEkleDil.Location = new System.Drawing.Point(419, 274);
+            this.btnEkleDil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEkleDil.Name = "btnEkleDil";
-            this.btnEkleDil.Size = new System.Drawing.Size(150, 23);
+            this.btnEkleDil.Size = new System.Drawing.Size(200, 28);
             this.btnEkleDil.TabIndex = 24;
             this.btnEkleDil.Text = "Добавить файл";
             this.btnEkleDil.UseVisualStyleBackColor = true;
@@ -542,9 +572,11 @@
             // gbDil
             // 
             this.gbDil.Controls.Add(this.cbDil);
-            this.gbDil.Location = new System.Drawing.Point(470, 12);
+            this.gbDil.Location = new System.Drawing.Point(627, 15);
+            this.gbDil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbDil.Name = "gbDil";
-            this.gbDil.Size = new System.Drawing.Size(200, 55);
+            this.gbDil.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbDil.Size = new System.Drawing.Size(267, 68);
             this.gbDil.TabIndex = 27;
             this.gbDil.TabStop = false;
             this.gbDil.Text = "Language";
@@ -555,51 +587,55 @@
             this.cbDil.FormattingEnabled = true;
             this.cbDil.Items.AddRange(new object[] {
             "Russian",
-            "English"});
-            this.cbDil.Location = new System.Drawing.Point(6, 19);
+            "English",
+            "Vietnam"});
+            this.cbDil.Location = new System.Drawing.Point(8, 23);
+            this.cbDil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbDil.Name = "cbDil";
-            this.cbDil.Size = new System.Drawing.Size(188, 21);
+            this.cbDil.Size = new System.Drawing.Size(249, 24);
             this.cbDil.TabIndex = 0;
             this.cbDil.SelectedIndexChanged += new System.EventHandler(this.cbDil_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(839, 297);
+            this.label1.Location = new System.Drawing.Point(1119, 366);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 13);
+            this.label1.Size = new System.Drawing.Size(91, 16);
             this.label1.TabIndex = 28;
-            this.label1.Text = "Ru/En v1.0";
+            this.label1.Text = "Ru/En/Vn v1.1";
             // 
             // linkvk
             // 
             this.linkvk.AutoSize = true;
             this.linkvk.LinkColor = System.Drawing.Color.Black;
-            this.linkvk.Location = new System.Drawing.Point(773, 54);
+            this.linkvk.Location = new System.Drawing.Point(1031, 66);
+            this.linkvk.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkvk.Name = "linkvk";
-            this.linkvk.Size = new System.Drawing.Size(139, 13);
+            this.linkvk.Size = new System.Drawing.Size(175, 16);
             this.linkvk.TabIndex = 29;
             this.linkvk.TabStop = true;
-            this.linkvk.Text = "www.vk.com/plusgames_ru";
+            this.linkvk.Text = "";
             this.linkvk.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkvk_LinkClicked);
             // 
             // linkgszone
             // 
             this.linkgszone.AutoSize = true;
             this.linkgszone.LinkColor = System.Drawing.Color.Black;
-            this.linkgszone.Location = new System.Drawing.Point(773, 38);
+            this.linkgszone.Location = new System.Drawing.Point(1031, 47);
+            this.linkgszone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkgszone.Name = "linkgszone";
-            this.linkgszone.Size = new System.Drawing.Size(96, 13);
+            this.linkgszone.Size = new System.Drawing.Size(175, 16);
             this.linkgszone.TabIndex = 30;
             this.linkgszone.TabStop = true;
-            this.linkgszone.Text = "www.plusgames.ru";
-            this.linkgszone.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkgszone_LinkClicked);
+            this.linkgszone.Text = "https://github.com/HaiHai-17";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(935, 333);
+            this.ClientSize = new System.Drawing.Size(1244, 400);
             this.Controls.Add(this.linkgszone);
             this.Controls.Add(this.linkvk);
             this.Controls.Add(this.label1);
@@ -633,11 +669,12 @@
             this.Controls.Add(this.lblFlashDil);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(951, 372);
-            this.MinimumSize = new System.Drawing.Size(951, 372);
+            this.MaximumSize = new System.Drawing.Size(1262, 447);
+            this.MinimumSize = new System.Drawing.Size(1262, 447);
             this.Name = "Form1";
-            this.Text = "DDTank Flash Downloader Ru/En";
+            this.Text = "DDTank Flash Downloader Ru/En/Vn";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.gbDil.ResumeLayout(false);
             this.ResumeLayout(false);
